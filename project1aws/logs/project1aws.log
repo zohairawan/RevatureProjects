@@ -1,0 +1,57 @@
+2022-06-05_11:43:45.640 [http-nio-8090-exec-4] INFO  c.p.t.r.services.UserServiceImpl - INFO - Get item started execution
+2022-06-05_11:43:45.640 [http-nio-8090-exec-4] WARN  c.p.t.r.services.UserServiceImpl - WARN - Get item started execution
+2022-06-05_11:43:45.640 [http-nio-8090-exec-4] ERROR c.p.t.r.services.UserServiceImpl - ERROR - Get item started execution
+2022-06-05_11:45:28.056 [http-nio-8090-exec-5] INFO  c.p.t.r.services.UserServiceImpl - INFO - Get item started execution
+2022-06-05_11:45:28.056 [http-nio-8090-exec-5] WARN  c.p.t.r.services.UserServiceImpl - WARN - Get item started execution
+2022-06-05_11:45:28.066 [http-nio-8090-exec-5] ERROR c.p.t.r.services.UserServiceImpl - ERROR - Get item started execution
+2022-06-05_11:46:01.196 [http-nio-8090-exec-6] INFO  c.p.t.r.services.UserServiceImpl - INFO - Get item started execution
+2022-06-05_11:46:01.196 [http-nio-8090-exec-6] WARN  c.p.t.r.services.UserServiceImpl - WARN - Get item started execution
+2022-06-05_11:46:01.196 [http-nio-8090-exec-6] ERROR c.p.t.r.services.UserServiceImpl - ERROR - Get item started execution
+2022-06-05_11:46:18.436 [http-nio-8090-exec-9] INFO  c.p.t.r.services.UserServiceImpl - INFO - Get item started execution
+2022-06-05_11:46:18.436 [http-nio-8090-exec-9] WARN  c.p.t.r.services.UserServiceImpl - WARN - Get item started execution
+2022-06-05_11:46:18.436 [http-nio-8090-exec-9] ERROR c.p.t.r.services.UserServiceImpl - ERROR - Get item started execution
+2022-06-05_11:47:23.550 [http-nio-8090-exec-8] INFO  c.p.t.r.services.UserServiceImpl - INFO - Get item started execution
+2022-06-05_11:47:23.550 [http-nio-8090-exec-8] WARN  c.p.t.r.services.UserServiceImpl - WARN - Get item started execution
+2022-06-05_11:47:23.550 [http-nio-8090-exec-8] ERROR c.p.t.r.services.UserServiceImpl - ERROR - Get item started execution
+2022-06-05_11:47:44.487 [http-nio-8090-exec-1] INFO  c.p.t.r.services.UserServiceImpl - INFO - Register user started execution
+2022-06-05_11:47:44.487 [http-nio-8090-exec-1] WARN  c.p.t.r.services.UserServiceImpl - WARN - Register user started execution
+2022-06-05_11:47:44.487 [http-nio-8090-exec-1] ERROR c.p.t.r.services.UserServiceImpl - ERROR - Register user started execution
+2022-06-05_11:47:44.487 [http-nio-8090-exec-1] INFO  c.p.t.r.services.UserServiceImpl - Checking if user exists started
+2022-06-05_11:47:44.518 [http-nio-8090-exec-1] WARN  c.p.t.r.services.UserServiceImpl - User: 6 does not exist
+2022-06-05_11:47:44.622 [http-nio-8090-exec-1] INFO  c.p.t.r.services.UserServiceImpl - User: 6 saved successfully
+2022-06-05_11:48:40.904 [http-nio-8090-exec-2] INFO  c.p.t.r.services.UserServiceImpl - INFO - Get item started execution
+2022-06-05_11:48:40.904 [http-nio-8090-exec-2] WARN  c.p.t.r.services.UserServiceImpl - WARN - Get item started execution
+2022-06-05_11:48:40.904 [http-nio-8090-exec-2] ERROR c.p.t.r.services.UserServiceImpl - ERROR - Get item started execution
+2022-06-05_11:58:32.669 [http-nio-8091-exec-4] INFO  c.p.t.r.services.UserServiceImpl - INFO - Get item started execution
+2022-06-05_11:58:32.669 [http-nio-8091-exec-4] WARN  c.p.t.r.services.UserServiceImpl - WARN - Get item started execution
+2022-06-05_11:58:32.669 [http-nio-8091-exec-4] ERROR c.p.t.r.services.UserServiceImpl - ERROR - Get item started execution
+2022-06-05_12:02:13.552 [http-nio-8091-exec-3] INFO  c.p.t.r.services.UserServiceImpl - INFO - Register user started execution
+2022-06-05_12:02:13.552 [http-nio-8091-exec-3] WARN  c.p.t.r.services.UserServiceImpl - WARN - Register user started execution
+2022-06-05_12:02:13.552 [http-nio-8091-exec-3] ERROR c.p.t.r.services.UserServiceImpl - ERROR - Register user started execution
+2022-06-05_12:02:13.552 [http-nio-8091-exec-3] INFO  c.p.t.r.services.UserServiceImpl - Checking if user exists started
+2022-06-05_12:02:13.599 [http-nio-8091-exec-3] WARN  c.p.t.r.services.UserServiceImpl - User: 1 does not exist
+2022-06-05_12:02:13.723 [http-nio-8091-exec-3] INFO  c.p.t.r.services.UserServiceImpl - User: 1 saved successfully
+2022-06-05_12:02:29.377 [http-nio-8091-exec-6] INFO  c.p.t.r.services.ItemServiceImpl - INFO - Get item started execution
+2022-06-05_12:02:29.377 [http-nio-8091-exec-6] WARN  c.p.t.r.services.ItemServiceImpl - WARN - Get item started execution
+2022-06-05_12:02:29.377 [http-nio-8091-exec-6] ERROR c.p.t.r.services.ItemServiceImpl - ERROR - Get item started execution
+2022-06-05_12:02:32.389 [http-nio-8091-exec-7] INFO  c.p.t.r.services.UserServiceImpl - INFO - Get item started execution
+2022-06-05_12:02:32.389 [http-nio-8091-exec-7] WARN  c.p.t.r.services.UserServiceImpl - WARN - Get item started execution
+2022-06-05_12:02:32.389 [http-nio-8091-exec-7] ERROR c.p.t.r.services.UserServiceImpl - ERROR - Get item started execution
+2022-06-05_12:05:01.496 [http-nio-8091-exec-5] INFO  c.p.t.r.services.UserServiceImpl - INFO - Register user started execution
+2022-06-05_12:05:01.496 [http-nio-8091-exec-5] WARN  c.p.t.r.services.UserServiceImpl - WARN - Register user started execution
+2022-06-05_12:05:01.496 [http-nio-8091-exec-5] ERROR c.p.t.r.services.UserServiceImpl - ERROR - Register user started execution
+2022-06-05_12:05:01.496 [http-nio-8091-exec-5] INFO  c.p.t.r.services.UserServiceImpl - Checking if user exists started
+2022-06-05_12:05:01.504 [http-nio-8091-exec-5] WARN  c.p.t.r.services.UserServiceImpl - User: 2 does not exist
+2022-06-05_12:05:01.540 [http-nio-8091-exec-5] INFO  c.p.t.r.services.UserServiceImpl - User: 2 saved successfully
+2022-06-05_12:05:14.375 [http-nio-8091-exec-6] INFO  c.p.t.r.services.UserServiceImpl - INFO - Get item started execution
+2022-06-05_12:05:14.375 [http-nio-8091-exec-6] WARN  c.p.t.r.services.UserServiceImpl - WARN - Get item started execution
+2022-06-05_12:05:14.375 [http-nio-8091-exec-6] ERROR c.p.t.r.services.UserServiceImpl - ERROR - Get item started execution
+2022-06-05_12:05:32.021 [http-nio-8091-exec-8] INFO  c.p.t.r.services.ItemServiceImpl - INFO - Get item started execution
+2022-06-05_12:05:32.021 [http-nio-8091-exec-8] WARN  c.p.t.r.services.ItemServiceImpl - WARN - Get item started execution
+2022-06-05_12:05:32.021 [http-nio-8091-exec-8] ERROR c.p.t.r.services.ItemServiceImpl - ERROR - Get item started execution
+2022-06-05_12:06:41.760 [http-nio-8091-exec-4] INFO  c.p.t.r.services.UserServiceImpl - INFO - Get users started execution
+2022-06-05_12:06:41.760 [http-nio-8091-exec-4] WARN  c.p.t.r.services.UserServiceImpl - WARN - Get users started execution
+2022-06-05_12:06:41.760 [http-nio-8091-exec-4] ERROR c.p.t.r.services.UserServiceImpl - ERROR - Get users started execution
+2022-06-05_12:06:50.217 [http-nio-8091-exec-3] INFO  c.p.t.r.services.ItemServiceImpl - INFO - Get item started execution
+2022-06-05_12:06:50.217 [http-nio-8091-exec-3] WARN  c.p.t.r.services.ItemServiceImpl - WARN - Get item started execution
+2022-06-05_12:06:50.217 [http-nio-8091-exec-3] ERROR c.p.t.r.services.ItemServiceImpl - ERROR - Get item started execution

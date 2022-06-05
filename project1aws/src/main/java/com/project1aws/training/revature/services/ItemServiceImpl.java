@@ -64,7 +64,11 @@ public class ItemServiceImpl implements ItemService{
 
     // Get all items
     public List<Item> getItems() {
-        LOGGER.info("Getting items started execution");
+        LOGGER.trace("TRACE - Get item started execution");
+        LOGGER.debug("DEBUG - Get item started execution");
+        LOGGER.info("INFO - Get item started execution");
+        LOGGER.warn("WARN - Get item started execution");
+        LOGGER.error("ERROR - Get item started execution");
         return itemDAO.findAll();
     }
 

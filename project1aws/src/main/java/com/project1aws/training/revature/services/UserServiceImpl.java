@@ -56,7 +56,11 @@ public class UserServiceImpl implements UserService{
 
     // 1.Register new users
     public ResponseEntity<String> registerUser(User user) {
-        LOGGER.info("Registering user started execution");
+        LOGGER.trace("TRACE - Register user started execution");
+        LOGGER.debug("DEBUG - Register user started execution");
+        LOGGER.info("INFO - Register user started execution");
+        LOGGER.warn("WARN - Register user started execution");
+        LOGGER.error("ERROR - Register user started execution");
         ResponseEntity responseEntity;
         if(userExists(user.getUserId())) {
             LOGGER.warn("User: " + user.getUserId() + " already exists");
@@ -102,6 +106,11 @@ public class UserServiceImpl implements UserService{
     }
 
     public List<User> getUsers() {
+        LOGGER.trace("TRACE - Get users started execution");
+        LOGGER.debug("DEBUG - Get users started execution");
+        LOGGER.info("INFO - Get users started execution");
+        LOGGER.warn("WARN - Get users started execution");
+        LOGGER.error("ERROR - Get users started execution");
         return userDAO.findAll();
     }
 

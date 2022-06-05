@@ -18,7 +18,7 @@ import java.util.List;
 @NoArgsConstructor
 @Component
 @Entity
-@Table(name = "carts", schema = "projectoneaws")
+@Table(name = "carts", schema = "projectoneawsremote")
 public class Cart {
     @Id
     //@GeneratedValue(strategy = GenerationType.SEQUENCE)

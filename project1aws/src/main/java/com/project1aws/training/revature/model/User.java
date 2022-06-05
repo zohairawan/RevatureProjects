@@ -16,7 +16,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Component
 @Entity
-@Table(name = "users", schema = "projectoneaws")
+@Table(name = "users", schema = "projectoneawsremote")
 public class User {
     //@SequenceGenerator(name="mysequenceUser", initialValue=1)
     //@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="mysequenceUser")
