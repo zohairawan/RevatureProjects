@@ -50,7 +50,7 @@ public class ItemController {
     // http://localhost:8089/items/addStock
     @Authorized(allowedRoles = {Role.ADMIN})
     @PostMapping("/addStock")
-    public Item addStock(@RequestBody Item item) {
+    public ResponseEntity<String> addStock(@RequestBody Item item) {
         return itemService.addStock(item);
     }
 }

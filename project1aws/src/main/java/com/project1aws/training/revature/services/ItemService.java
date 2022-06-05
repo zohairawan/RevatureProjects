@@ -10,7 +10,7 @@ public interface ItemService {
     public ResponseEntity<String> addItem(Item item);
     ResponseEntity<String> deleteItem(int itemId);
     public List<Item> getItems();
-    public Item addStock(Item item);
+    public ResponseEntity<String> addStock(Item item);
 
 
 }

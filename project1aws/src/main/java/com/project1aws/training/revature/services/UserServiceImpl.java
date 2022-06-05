@@ -7,6 +7,8 @@ package com.project1aws.training.revature.services;
 import com.project1aws.training.revature.dao.UserDAO;
 import com.project1aws.training.revature.exceptions.UserNotFoundException;
 import com.project1aws.training.revature.model.User;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,16 +17,23 @@ import org.springframework.stereotype.Service;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class UserServiceImpl implements UserService{
+    private static final Logger LOGGER = LoggerFactory.getLogger(UserServiceImpl.class);
     @Autowired
     private HttpServletRequest req;
     @Autowired
     private UserDAO userDAO;
 
     public boolean userExists(int userId) {
+        LOGGER.info("Checking if user exists started");
+        if(userDAO.existsById(userId)) {
+            LOGGER.info("User: " + userId + " does exist");
+        }
+        else {
+            LOGGER.warn("User: " + userId + " does not exist");
+        }
         return userDAO.existsById(userId);
     }
 
@@ -47,39 +56,47 @@ public class UserServiceImpl implements UserService{
 
     // 1.Register new users
     public ResponseEntity<String> registerUser(User user) {
+        LOGGER.info("Registering user started execution");
         ResponseEntity responseEntity;
         if(userExists(user.getUserId())) {
+            LOGGER.warn("User: " + user.getUserId() + " already exists");
             return new ResponseEntity<String>("Can't register user because they're already registered", HttpStatus.CONFLICT);
         }
         else {
             userDAO.save(user);
+            LOGGER.info("User: " + user.getUserId() + " saved successfully");
             return new ResponseEntity<String>("Registered user: " + user + " successfully", HttpStatus.OK);
         }
     }
 
-    public boolean updateUser(User updatedUser, int id) {
+    public ResponseEntity<String> addItemToCart(User updatedUser, int id) {
+        LOGGER.info("Adding item(s) to cart started execution");
+        ResponseEntity responseEntity;
         User currentUser = userDAO.getReferenceById(id);
         if(userExists(currentUser.getUserId())) {
-            System.out.println("Updating user");
             currentUser.setUsername(updatedUser.getUsername());
             currentUser.setCart(updatedUser.getCart());
             userDAO.save(currentUser);
-            return true;
+            LOGGER.info("Item(s) added to cart successfully");
+            return new ResponseEntity<String>("Item(s) added to cart successfully", HttpStatus.OK);
         }
         else {
-            System.out.println("Can't update user");
-            return false;
+            LOGGER.warn("User: " + currentUser.getUserId() + " does not exist");
+            return new ResponseEntity<String>("User: " + currentUser.getUserId() + " does not exist", HttpStatus.NOT_FOUND);
         }
     }
 
     // Delete user
     public ResponseEntity<String> deleteUser(int userId) {
+        LOGGER.info("Delete user started execution");
         ResponseEntity responseEntity;
         if(userExists(userId)) {
             userDAO.deleteById(userId);
+            LOGGER.info("User: " + userId + " deleted successfully");
             return new ResponseEntity<String>("User: " + userId + " deleted successfully", HttpStatus.OK);
         }
         else {
+            LOGGER.warn("User: " + userId + " does not exist, delete unsuccessful");
             return new ResponseEntity<String> ("User: " + userId + " does not exist, delete unsuccessful", HttpStatus.NOT_ACCEPTABLE);
         }
     }

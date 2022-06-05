@@ -14,7 +14,7 @@ public interface UserService {
     void logout();
     public boolean userExists(int userId);
     public ResponseEntity<String> registerUser(User user);
-    public boolean updateUser(User newUser, int id);
+    public ResponseEntity<String> addItemToCart(User newUser, int id);
     public ResponseEntity<String> deleteUser(int userId);
     public List<User> getUsers();
 
