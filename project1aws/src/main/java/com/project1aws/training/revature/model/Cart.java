@@ -18,14 +18,14 @@ import java.util.List;
 @NoArgsConstructor
 @Component
 @Entity
-@Table(name = "carts", schema = "projectoneawsremote")
+@Table(name = "carts", schema = "projectoneaws")
 public class Cart {
     @Id
     //@GeneratedValue(strategy = GenerationType.SEQUENCE)
     private int cartId;
 
     @ManyToMany
-    @JoinTable(name = "cart_item", schema = "projectoneawsremote",
+    @JoinTable(name = "cart_item", schema = "projectoneaws",
         joinColumns = @JoinColumn(name = "cart_id", referencedColumnName = "cartId"),
         inverseJoinColumns = @JoinColumn(name = "item_id", referencedColumnName = "itemId"))
     private List<Item> itemList;

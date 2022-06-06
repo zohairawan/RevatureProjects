@@ -1,4 +1,4 @@
-package com.project1aws.training.revature.advice;
+package com.project1aws.training.revature.aspect;
 
 import com.project1aws.training.revature.annotations.Authorized;
 import com.project1aws.training.revature.exceptions.NotAuthorizedException;

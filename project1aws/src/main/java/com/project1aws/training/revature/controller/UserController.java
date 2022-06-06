@@ -28,7 +28,7 @@ public class UserController {
     private AuthorizationService authorizationService;
 
     // 1.Register new users
-    // localhost:8091/users/registerUser
+    // localhost:8090/users/registerUser
     @Authorized(allowedRoles = {Role.ADMIN})
     @PostMapping("/registerUser")
     public ResponseEntity<String> registerUser(@RequestBody User user) {
@@ -36,14 +36,14 @@ public class UserController {
     }
 
     // 2. Login users
-    // localhost:8091/users/login
+    // localhost:8090/users/login
     @PostMapping("/login")
     public ResponseEntity<User> login(@RequestBody LoginTemplate loginTemplate) {
         return ResponseEntity.ok(userService.login(loginTemplate.getUsername(), loginTemplate.getPassword()));
     }
 
     // 2. Logout users
-    // localhost:8091/users/logout
+    // localhost:8090/users/logout
     @PostMapping("/logout")
     public ResponseEntity<Void> logout() {
         userService.logout();
@@ -51,7 +51,7 @@ public class UserController {
     }
 
     // 3.Get all users
-    // localhost:8091/users/getUsers
+    // localhost:8090/users/getUsers
     @Authorized(allowedRoles = {Role.ADMIN})
     @GetMapping("/getUsers")
     public List<User> getUsers() {
@@ -59,14 +59,14 @@ public class UserController {
     }
 
     // Add item(s) to cart
-    // localhost:8091/users/addItemToCart/
+    // localhost:8090/users/addItemToCart/
     @PutMapping("/addItemToCart/{id}")
     public ResponseEntity<String> addItemToCart(@RequestBody User newUser, @PathVariable("id") int id) {
         return userService.addItemToCart(newUser, id);
     }
 
     // Delete existing user
-    // localhost:8091/users/deleteUser
+    // localhost:8090/users/deleteUser
     @Authorized(allowedRoles = {Role.ADMIN})
     @DeleteMapping("/delete/{userId}")
     public ResponseEntity<String> deleteUser(@PathVariable("userId") int userId) {return userService.deleteUser(userId);}
