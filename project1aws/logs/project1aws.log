@@ -59,3 +59,6 @@
 2022-06-06_10:21:05.054 [http-nio-8091-exec-6] INFO  c.p.t.r.services.UserServiceImpl - INFO - Get users started execution
 2022-06-06_10:21:05.055 [http-nio-8091-exec-6] WARN  c.p.t.r.services.UserServiceImpl - WARN - Get users started execution
 2022-06-06_10:21:05.055 [http-nio-8091-exec-6] ERROR c.p.t.r.services.UserServiceImpl - ERROR - Get users started execution
+2022-06-06_10:26:21.036 [http-nio-8091-exec-3] INFO  c.p.t.r.services.UserServiceImpl - INFO - Get users started execution
+2022-06-06_10:26:21.036 [http-nio-8091-exec-3] WARN  c.p.t.r.services.UserServiceImpl - WARN - Get users started execution
+2022-06-06_10:26:21.036 [http-nio-8091-exec-3] ERROR c.p.t.r.services.UserServiceImpl - ERROR - Get users started execution
