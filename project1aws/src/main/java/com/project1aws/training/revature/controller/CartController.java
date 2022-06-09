@@ -19,7 +19,7 @@ public class CartController {
 
     // Get all carts
     // http://localhost:8091/carts/getCarts
-    @Authorized(allowedRoles = {Role.ADMIN, Role.CUSTOMER})
+    @Authorized(allowedRoles = {Role.ADMIN})
     @GetMapping("/getCarts")
     public List<Cart> getCarts(){return cartService.getCarts();}
 }

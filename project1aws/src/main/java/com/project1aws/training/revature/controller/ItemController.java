@@ -32,7 +32,7 @@ public class ItemController {
     }
 
     // Delete existing item
-    // http://localhost:8090/items/deleteItem
+    // http://localhost:8091/items/deleteItem
     @Authorized(allowedRoles = {Role.ADMIN})
     @DeleteMapping("/deleteItem/{itemId}")
     public ResponseEntity<String> deleteItem(@PathVariable("itemId") int itemId) {
@@ -40,14 +40,14 @@ public class ItemController {
     }
 
     // 4.Get all items
-    // http://localhost:8090/items/getItems
+    // http://localhost:8091/items/getItems
     @Authorized(allowedRoles = {Role.ADMIN, Role.CUSTOMER})
     @GetMapping("/getItems")
     public List<Item> getItems() {
         return itemService.getItems();
     }
 
-    // http://localhost:8090/items/addStock
+    // http://localhost:8091/items/addStock
     @Authorized(allowedRoles = {Role.ADMIN})
     @PostMapping("/addStock")
     public ResponseEntity<String> addStock(@RequestBody Item item) {

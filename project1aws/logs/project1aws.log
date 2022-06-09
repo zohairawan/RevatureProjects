@@ -80,3 +80,6 @@
 2022-06-08_00:41:25.403 [http-nio-8091-exec-6] INFO  c.p.t.r.services.ItemServiceImpl - INFO - Get item started execution
 2022-06-08_00:41:25.404 [http-nio-8091-exec-6] WARN  c.p.t.r.services.ItemServiceImpl - WARN - Get item started execution
 2022-06-08_00:41:25.404 [http-nio-8091-exec-6] ERROR c.p.t.r.services.ItemServiceImpl - ERROR - Get item started execution
+2022-06-08_23:33:51.790 [http-nio-8091-exec-3] INFO  c.p.t.r.services.UserServiceImpl - INFO - Get users started execution
+2022-06-08_23:33:51.790 [http-nio-8091-exec-3] WARN  c.p.t.r.services.UserServiceImpl - WARN - Get users started execution
+2022-06-08_23:33:51.790 [http-nio-8091-exec-3] ERROR c.p.t.r.services.UserServiceImpl - ERROR - Get users started execution
