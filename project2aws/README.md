@@ -1,5 +1,5 @@
 README file
-Project 2
+Project 2 readme
 
 Objectives:
 1) 
