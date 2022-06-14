@@ -18,7 +18,9 @@ Features to be Implemented:
 5) Add Item to Cart – adds selected item to the cart
 
 Technologies Used:
-1) Spring Framework:
+1) Java
+2) Maven
+3) Spring Framework:
    1) Developer Tools:
       1) SpringBoot DevTools
       2) Lombok
@@ -26,14 +28,15 @@ Technologies Used:
       1) Spring Web
    3) Spring Boot Data JPA
    4) Spring Boot Actuator
-2) FluentD 
-3) Logback
-4) Logcack-classic
-5) Logback-core
-6) slf4j
-7) PostgreSQL
-8) DBeaver
-9) Postman
+   5) Spring AOP
+4) Logback
+5) Logcack-classic
+6) Logback-core
+7) Log4J
+8) PostgreSQL
+9) DBeaver
+10) Postman
+11) Git
 
 Secondary applications required :
 1) Postman
