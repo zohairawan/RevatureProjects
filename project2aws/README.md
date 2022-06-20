@@ -2,7 +2,7 @@ README file
 Project 2 readme
 
 Objectives:
-1) 
+1)
 
 Features to be Implemented:
 1) 
