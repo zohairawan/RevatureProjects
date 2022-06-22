@@ -28,15 +28,15 @@ Technologies Used:
       1) Spring Web
    3) Spring Boot Data JPA
    4) Spring Boot Actuator
-   5) Spring AOP
-4) Logback
-5) Logcack-classic
-6) Logback-core
-7) Log4J
-8) PostgreSQL
-9) DBeaver
-10) Postman
-11) Git
+4) Spring AOP
+5) Logback
+6) Logcack-classic
+7) Logback-core
+8) Log4J
+9) PostgreSQL
+10) DBeaver
+11) Postman
+12) Git
 
 Secondary applications required :
 1) Postman
