@@ -121,6 +121,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>p1app</finalName>
 	</build>
 
 </project>
